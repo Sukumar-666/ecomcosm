@@ -1,135 +1,217 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>SkSync-Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkSync - Home</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="bg-pink-50">
 
-<center>
-    <h1>Welcome To SkSync</h1>
-    <h3>Your Beauty, Our Responsibility</h3>
+<!-- Header -->
+<header class="bg-pink-600 text-white shadow-lg">
 
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a>
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-5">
 
-    <hr>
-</center>
+        <div>
+            <h1 class="text-3xl font-bold">SkSync</h1>
+            <p class="text-sm">Your Beauty, Our Responsibility</p>
+        </div>
 
-<h2>Welcome</h2>
+        <nav class="space-x-6">
+            <a href="index.html" class="hover:text-yellow-300 font-semibold">Home</a>
+            <a href="about.html" class="hover:text-yellow-300 font-semibold">About</a>
+        </nav>
 
-<p>
-Welcome to Glow Beauty Cosmetics Store.
-We provide high-quality skincare and makeup products
-at affordable prices.
+    </div>
+
+</header>
+
+<!-- Hero -->
+
+<section class="text-center py-12">
+
+<h2 class="text-4xl font-bold text-pink-700">
+Welcome To Glow Beauty Cosmetics
+</h2>
+
+<p class="mt-4 text-gray-700 max-w-3xl mx-auto">
+Welcome to Glow Beauty Cosmetics Store. We provide high-quality skincare and makeup products at affordable prices.
 </p>
 
-<hr>
+</section>
 
-<h2>Our Beauty Video</h2>
+<!-- Video -->
 
-<center>
-<video width="300" height="500" controls>
-    <source src="these_in_generate_a_video_in_S.mp4" type="video/mp4">
-    Your browser does not support the video tag.
+<section class="max-w-4xl mx-auto bg-white shadow-lg rounded-xl p-8">
+
+<h2 class="text-2xl font-bold text-center mb-6">
+Our Beauty Video
+</h2>
+
+<div class="flex justify-center">
+
+<video width="300" height="500" controls class="rounded-lg shadow-lg">
+<source src="these_in_generate_a_video_in_S.mp4" type="video/mp4">
 </video>
-</center>
 
-<hr>
+</div>
 
-<h2>Our Products</h2>
+</section>
 
-<center>
-<table border="1" cellpadding="10">
-<tr>
-<th>Product</th>
-<th>Image</th>
-<th>Price</th>
-<th>Status</th>
-</tr>
+<!-- Products -->
 
-<tr>
-<td>Lipstick</td>
-<td>
-<img src="lip.jpg" width="120">
-</td>
-<td>₹499</td>
-<td>Available</td>
-</tr>
+<section class="max-w-6xl mx-auto py-12">
 
-<tr>
-<td>Face Cream</td>
-<td>
-<img src="face.jpg" width="120">
-</td>
-<td>₹699</td>
-<td>Available</td>
-</tr>
+<h2 class="text-3xl font-bold text-center mb-8 text-pink-700">
+Our Products
+</h2>
 
-<tr>
-<td>Perfume</td>
-<td>
-<img src="perf.jpg" width="120">
-</td>
-<td>₹999</td>
-<td>Available</td>
-</tr>
+<div class="grid md:grid-cols-3 gap-8">
 
-</table>
-</center>
+<div class="bg-white rounded-xl shadow-lg p-5 text-center">
 
-<hr>
+<img src="lip.jpg" class="mx-auto h-52 object-cover rounded-lg">
 
-<h2>Special Offers</h2>
+<h3 class="text-xl font-bold mt-4">
+Lipstick
+</h3>
 
-<ul>
+<p class="text-pink-600 text-xl font-bold mt-2">
+₹499
+</p>
+
+<button class="mt-4 bg-pink-600 text-white px-5 py-2 rounded hover:bg-pink-700">
+Buy Now
+</button>
+
+</div>
+
+<div class="bg-white rounded-xl shadow-lg p-5 text-center">
+
+<img src="face.jpg" class="mx-auto h-52 object-cover rounded-lg">
+
+<h3 class="text-xl font-bold mt-4">
+Face Cream
+</h3>
+
+<p class="text-pink-600 text-xl font-bold mt-2">
+₹699
+</p>
+
+<button class="mt-4 bg-pink-600 text-white px-5 py-2 rounded hover:bg-pink-700">
+Buy Now
+</button>
+
+</div>
+
+<div class="bg-white rounded-xl shadow-lg p-5 text-center">
+
+<img src="perf.jpg" class="mx-auto h-52 object-cover rounded-lg">
+
+<h3 class="text-xl font-bold mt-4">
+Perfume
+</h3>
+
+<p class="text-pink-600 text-xl font-bold mt-2">
+₹999
+</p>
+
+<button class="mt-4 bg-pink-600 text-white px-5 py-2 rounded hover:bg-pink-700">
+Buy Now
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Offers -->
+
+<section class="bg-pink-100 py-10">
+
+<div class="max-w-4xl mx-auto">
+
+<h2 class="text-3xl font-bold text-center mb-6">
+Special Offers
+</h2>
+
+<ul class="list-disc list-inside text-lg space-y-3">
+
 <li>20% Discount on Lipsticks</li>
+
 <li>Buy 2 Face Creams Get 1 Free</li>
+
 <li>Free Delivery Above ₹999</li>
+
 <li>Cash on Delivery Available</li>
+
 </ul>
 
-<hr>
+</div>
 
-<h2>Place Your Order</h2>
+</section>
 
-<form>
+<!-- Order Form -->
 
-Name<br>
-<input type="text"><br><br>
+<section class="py-12">
 
-Email<br>
-<input type="email"><br><br>
+<div class="max-w-xl mx-auto bg-white rounded-xl shadow-lg p-8">
 
-Phone Number<br>
-<input type="tel"><br><br>
+<h2 class="text-3xl font-bold text-center mb-6">
+Place Your Order
+</h2>
 
-Select Product<br>
-<select>
+<form class="space-y-4">
+
+<input type="text" placeholder="Name"
+class="w-full border p-3 rounded">
+
+<input type="email" placeholder="Email"
+class="w-full border p-3 rounded">
+
+<input type="tel" placeholder="Phone Number"
+class="w-full border p-3 rounded">
+
+<select class="w-full border p-3 rounded">
+
 <option>Lipstick</option>
+
 <option>Face Cream</option>
+
 <option>Perfume</option>
+
 <option>Face Wash</option>
+
 </select>
 
-<br><br>
+<input type="number" placeholder="Quantity"
+class="w-full border p-3 rounded">
 
-Quantity<br>
-<input type="number">
+<div class="flex gap-4">
 
-<br><br>
+<button class="bg-pink-600 text-white px-6 py-3 rounded hover:bg-pink-700">
+Buy Now
+</button>
 
-<input type="submit" value="Buy Now">
-<input type="reset" value="Clear">
+<button type="reset" class="bg-gray-500 text-white px-6 py-3 rounded hover:bg-gray-700">
+Clear
+</button>
+
+</div>
 
 </form>
 
-<hr>
+</div>
 
-<center>
-<p>
-Copyright © 2026 SkSync
-</p>
-</center>
+</section>
+
+<footer class="bg-pink-600 text-white text-center py-5">
+
+<p>© 2026 SkSync Cosmetics</p>
+
+</footer>
 
 </body>
 </html>
